@@ -4,13 +4,18 @@
     box-sizing: border-box;
 }
 
-
+/* NAVBAR STYLES */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
     padding: 15px 30px;
+    position: fixed;  /* Keeps navbar floating */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo img {
@@ -33,9 +38,17 @@
 }
 
 .nav-links a:hover {
-    color: #f4a261; /* Change color on hover */
+    color: #f4a261;
 }
 
+/* BACKGROUND IMAGE FIX */
+body {
+    background: url('Lorebook.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Fix so content is scrollable */
+}
+
+/* IMAGE CONTAINER */
 .image-container {
     position: relative;
     width: 100%;
@@ -48,28 +61,17 @@
     display: block;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: url('Lorebook.jpg') no-repeat center center fixed;
-    background-size: cover; /* Ensures it covers the entire screen */
-    height: 100vh; /* Makes sure it takes full height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
+/* TEXT OVER IMAGE */
 .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 32px;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+    background: rgba(0, 0, 0, 0.5);
     padding: 15px 30px;
     border-radius: 5px;
+    text-align: center;
 }
