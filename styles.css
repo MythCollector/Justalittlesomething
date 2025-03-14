@@ -56,7 +56,7 @@
 }
 
 body {
-    background: url('your-image.jpg') no-repeat center center fixed;
+    background: url('Lorebook.jpg') no-repeat center center fixed;
     background-size: cover; /* Ensures it covers the entire screen */
     height: 100vh; /* Makes sure it takes full height */
     display: flex;
