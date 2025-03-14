@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
 
 .navbar {
     display: flex;
@@ -38,11 +35,6 @@ body {
 .nav-links a:hover {
     color: #f4a261; /* Change color on hover */
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .image-container {
     position: relative;
@@ -56,16 +48,28 @@ body {
     display: block;
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('your-image.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures it covers the entire screen */
+    height: 100vh; /* Makes sure it takes full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
-    padding: 10px 20px;
+    padding: 15px 30px;
     border-radius: 5px;
-    text-align: center;
 }
